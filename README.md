@@ -7,7 +7,7 @@ mkdir -p /mnt/iso
 mount -o loop ~/Downloads/ubuntu-16.04.1-desktop-amd64.iso /mnt/iso
 </pre></code>
 ## Copy the Files
-Now we need to copy the mounted files so that we can edit it. Do it by:
+Now you need to copy the mounted files so that you can edit it. Do it by:
 <pre><code>
 mkdir -p ~/preseed_ubuntu
 cp -rT /mnt/iso ~/preseed_ubuntu
@@ -178,8 +178,8 @@ d-i cdrom-detect/eject                                      boolean     true
 d-i debian-installer/exit/halt                              boolean     false
 d-i debian-installer/exit/poweroff                          boolean     true
 
-# setup firstrun script
-#d-i preseed/late_command                                    string 		 <scripts to be run after installation>
+# setup firstrun script. (these scripts will run just after installation, uncomment if you want to use)
+#d-i preseed/late_command                                    string 		 
 </pre></code>
 As the file is self explanatory, you can easily understand and change the parameteres.
 ## Create new iso file
