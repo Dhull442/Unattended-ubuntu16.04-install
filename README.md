@@ -181,6 +181,7 @@ d-i debian-installer/exit/poweroff                          boolean     true
 # setup firstrun script. (these scripts will run just after installation, uncomment if you want to use)
 #d-i preseed/late_command                                    string 		 
 </pre></code>
+To view the official ubuntu example [refer here](https://help.ubuntu.com/lts/installation-guide/example-preseed.txt).
 As the file is self explanatory, you can easily understand and change the parameteres.
 ## Create new iso file
 run the following code as `sudo` while being in the directory:
