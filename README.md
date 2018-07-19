@@ -190,3 +190,7 @@ mkisofs -D -r -V "UNATTENDED_UBUNTU" -cache-inodes -J -l -b isolinux/isolinux.bi
 ## Burning the iso file
 Congratulations, You're done.
 Now, test the iso file on a virtual machine.
+
+#### Bug or suggestion?
+Feel free to report any problem :)
+
