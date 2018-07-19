@@ -182,7 +182,7 @@ d-i debian-installer/exit/poweroff                          boolean     true
 #d-i preseed/late_command                                    string 		 
 </pre></code>
 To view the official ubuntu example [refer here](https://help.ubuntu.com/lts/installation-guide/example-preseed.txt).
-As the file is self explanatory, you can easily understand and change the parameteres.
+ As the file is self explanatory, you can easily understand and change the parameters.
 ## Create new iso file
 run the following code as `sudo` while being in the directory:
 <pre><code>
