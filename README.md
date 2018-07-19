@@ -1,6 +1,6 @@
 # Unattended-ubuntu16.04-install
 This repository will guide you on how to do a completely unattended install of ubuntu 16.04
-##Mount the ISO File
+## Mount the ISO File
 You will need to mount the ISO files so that you can edit the pertinent files.
 <pre><code>
 mkdir -p /mnt/iso
@@ -175,8 +175,9 @@ d-i pkgsel/include                                          string      openssh-
 d-i finish-install/reboot_in_progress                       note
 d-i finish-install/keep-consoles                            boolean     false
 d-i cdrom-detect/eject                                      boolean     true
-d-i debian-installer/exit/halt                              boolean     false
-d-i debian-installer/exit/poweroff                          boolean     true
+#  to switch the machine off after install uncomment these
+#d-i debian-installer/exit/halt                              boolean     false
+#d-i debian-installer/exit/poweroff                          boolean     true
 
 # setup firstrun script. (these scripts will run just after installation, uncomment if you want to use)
 #d-i preseed/late_command                                    string 		 
