@@ -175,9 +175,9 @@ d-i pkgsel/include                                          string      openssh-
 d-i finish-install/reboot_in_progress                       note
 d-i finish-install/keep-consoles                            boolean     false
 d-i cdrom-detect/eject                                      boolean     true
-#  to switch the machine off after install uncomment these
-#d-i debian-installer/exit/halt                              boolean     false
-#d-i debian-installer/exit/poweroff                          boolean     true
+# to power-off the machine after install, turn halt option to true otherwise reboot the machine after install
+d-i debian-installer/exit/halt                              boolean     false
+d-i debian-installer/exit/poweroff                          boolean     true
 
 # setup firstrun script. (these scripts will run just after installation, uncomment if you want to use)
 #d-i preseed/late_command                                    string 		 
